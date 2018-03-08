@@ -18,7 +18,21 @@ h2 >.name{
       letter-spacing: 5px;
       font-family: "Avenir", sans-serif;
       color: #fff;
+      -webkit-animation:fadeInDown 0.5s both ease-in; 
+      -moz-animation:fadeInDown 0.5s both ease-in;
+      animation:fadeInDown 0.5s both ease-in;
+}
 
+.line_break{
+      -webkit-animation:fadeIn 1.2s both ease-in; 
+      -moz-animation:fadeIn 1.2s both ease-in;
+      animation:fadeIn 1.2s both ease-in;
+}
+
+.sub_header{
+      -webkit-animation:fadeInUp 0.5s both ease-in; 
+      -moz-animation:fadeInUp 0.5s both ease-in;
+      animation:fadeInUp 0.5s both ease-in;
 
 }
 .navbar{
