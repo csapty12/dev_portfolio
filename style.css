@@ -16,8 +16,9 @@ h2 >.name{
       font-size: 4em;
       letter-spacing: 5px;
       font-family: "Avenir", sans-serif;
-      margin-top: 18%;
       color: #fff;
+
+
 }
 .navbar{
       margin-bottom: 0!important;
@@ -41,7 +42,6 @@ h2 >.name{
 
 
 .bg-1 {
-      background-color: #1abc9c;
       color: #ffffff;
       background: linear-gradient(
             rgba(0,0,0,0.0),
@@ -55,4 +55,15 @@ h2 >.name{
 
 #container-1{
       height: 100vh;
+      
+
 } 
+
+.test{
+
+      position: absolute;
+      top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
