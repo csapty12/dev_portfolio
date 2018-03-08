@@ -1,34 +1,47 @@
-body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
-      font-family: "Avenir", sans-serif;
-
+body{
+      margin:0;
+      padding:0;
 }
+
 h2{
       font-size:4em;
-      /*color:#cdcdcd;*/
+      color:#cdcdcd;
       color: rgba(205, 205, 205, 1);
 }
 
 h2 >.name{
     color: rgb(205, 205, 205);
 }
-p {
-      font-size: 16px;}
-.margin {margin-bottom: 45px;}
-.name, .about{
+.name{
       font-size: 4em;
       letter-spacing: 5px;
       font-family: "Avenir", sans-serif;
       margin-top: 18%;
       color: #fff;
 }
-.about{
-      margin-top: 5%;
+.navbar{
+      margin-bottom: 0!important;
+      position: fixed;
+      width:100%;
 }
+
+
+.navbar-inverse {
+      background-color:transparent;
+      border-color: transparent;
+ }
+
+ .navbar-inverse .navbar-brand {
+      color: #fff;
+  }
+
+  .navbar-inverse .navbar-nav>li>a {
+      color: #000;
+  }
+
+
 .bg-1 {
-      /*background-color: #1abc9c; */
+      background-color: #1abc9c;
       color: #ffffff;
       background: linear-gradient(
             rgba(0,0,0,0.0),
@@ -39,200 +52,7 @@ p {
       background-size: cover;
       background-repeat: no-repeat;
 }
-#container-1, 
-#container-2, 
-#container-4,{
-      height:100vh;
-}
+
 #container-1{
-      height: 110vh;
-}
-
-#container-3,
-#container-4{
-      min-height: 100vh;
-      height: auto;
-}
-.bg-2 {
-      color: #ffffff;
-      background:  linear-gradient(
-            rgba(0,0,0,1),
-             /* rgba(0,0,0,0), */
-             rgba(0,0,0,0)
-            ,rgba(0,0,0,1)
-            ),url("background2.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-}
-.bg-3 {
-      /*background-color: #ffffff; /* White */
-      color: #555555;
-      background: linear-gradient(
-            rgba(0,0,0,.5),
-             /* rgba(0,0,0,0), */
-             rgba(0,0,0,0)
-
-            ),url("background3.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-}
-.bg-4 {
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-}
-.bg-5{
-      color: #555555;
-      background: #000;
-      /* linear-gradient(
-            rgba(0,0,0,1),
-             /* rgba(0,0,0,0), 
-             rgba(0,0,0,0)
-            ,rgba(0,0,0,1)
-            ),url("background4.jpg"); */
-      background-size: cover;
-      background-repeat: no-repeat;
-}
-.container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-}
-.navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-      width:100%;
-    position: fixed;
-    z-index:300;
-}
-
-a.navbar-brand:hover{
-  color:green;
-}
-
-
-.navbar-nav  li a:hover {
-      color: #1abc9c !important;
-}
-.form-group{
-      color:#cdcdcd;
-}
-footer >span{
-      letter-spacing: 3px;
-      font-family: "Avenir", sans-serif;
-}
-.icons > a > .icon-pack{
-      padding: 10px 15px;
-      color:#fff;
-}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-      width: 100%;
-      margin: auto;
-}
-
-.well{
-      background-color: rgba(0,0,0,0.5);
-      border:none;
-}
-.well >p{
-    color:#cdcdcd;
-}
-  
-
-.box{
-    background: #000;
-
-}
-
-.box img:hover{
-    opacity:.5;
-    transition: all 0.2s;
-}
-
-
-#one,#two,#three,#four,#five,#six{
-    display: none;
-}
-
-
-.image-container {
-    position: relative;
-}
-.image-container .after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    color: #FFF;
-}
-.image-container:hover .after {
-    display: block;
-    background: rgba(0, 0, 0, .6);
-}
-
-.btn1{
-  background:transparent;
-  color:#fff;
-   position:absolute; left:50%; top:50%; 
-    transform: translate(-50%,-50%);
-    font-size:1.4em;
-    letter-spacing: 3px;
-}
-
-.btn1:hover{
-  background:transparent;
-  color:#fff
-};
-
-
-.contact{
-    color:#fff;
-}
-#moreButton{
-  visibility: hidden;
-}
-#LessButton{
-  display: none;
-  width:100%;
-}
-
-@media only screen and (max-width: 800px) {
-.name{
-font-size: 3em;
-color: #fff;
-}
-.about-text{
-    font-size:3em;
-}
-.portfolio{
-    font-size:3em;
-}
-
-.contact{
-    font-size:3em;
-}
-
-.desktop-version{
-  display:none;
-}
-
-#moreButton{
-  visibility: visible;
-  width:100%;
-}
-
-
-
-}
-
-@media only screen and (max-width: 400px) {
-  .name, .portfolio{
-    font-size:1.8em;
-  }
-  }
+      height: 100vh;
+} 
