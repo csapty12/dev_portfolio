@@ -59,6 +59,17 @@ h2 >.name{
       -moz-animation:fadeInDown 0.5s both ease-in;
       animation:fadeInDown 0.5s both ease-in;
 }
+.typed-cursor {
+      color:#fff;
+      animation: blink 0.7s infinite;
+      display: inline;
+}
+
+@Keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+}
 
 .line_break{
       -webkit-animation:fadeIn 1.2s both ease-in;
