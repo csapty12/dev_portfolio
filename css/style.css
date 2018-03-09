@@ -44,7 +44,7 @@ body{
              /* rgba(0,0,0,0), */
              rgba(0,0,0,0.5)
             ,rgba(0,0,0,1)
-            ),url("../img/background1.jpg");
+            ),url("../img/test3.jpg");
       background-size: cover;
       background-repeat: no-repeat;
 }
@@ -86,7 +86,7 @@ h2 >.name{
 .name{
       font-size: 4em;
       letter-spacing: 5px;
-      font-family: "Avenir", sans-serif;
+      font-family: "Montserrat", sans-serif;
       color: #fff;
       -webkit-animation:fadeInDown 0.5s both ease-in;
       -moz-animation:fadeInDown 0.5s both ease-in;
@@ -109,3 +109,20 @@ h2 >.name{
 }
 
 /* end of type js css */
+
+.see-more{
+      position: absolute;
+      bottom: 30px;
+      left:50%;
+      font-size:2em;
+
+}
+
+
+
+#container-2{
+      height:1000px;
+      color:#fff;
+      letter-spacing: 3px;
+      font-family: "Montserrat", sans-serif;
+}

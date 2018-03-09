@@ -8,8 +8,7 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">        
     </head>
     <body>
@@ -42,16 +41,24 @@
         <a id = "home"> </a>
         <div class="container-fluid bg-1 text-center" id = "container-1">
           <div class="name-container">
-            
             <h2 class="name">CARL SAPTARSHI</h2>
             <div class="test"></div>
             <hr class="container line_break">
             <span class ="sub_header"></span>
           </div>
+          <div class="container">
+          <div class="see-more"><i class="fas fa-chevron-down"></i></div>
+          </div>
         </div>
+
+        <div class="container-fluid text-center" id = "container-2">
+          <header><h2 class="portfolio" style="color: #fff;">PORTFOLIO</h2></header>
+        </div>
+
     </body>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>
     $(document).ready(function(){
       var myNavBar = $(".container-fluid.myNavBar");
@@ -61,7 +68,6 @@
         if (positionofscroll > 50){
           myNavBar.css('background-color','rgba(0,0,0,0.8)');
           navbarElements.css("color","#fff");
-          
         }
         else{
           myNavBar.attr('style','');
@@ -70,8 +76,6 @@
       });
     });
     </script>
-
-
 
     <script src="js/typed.js"></script>
     <script>
