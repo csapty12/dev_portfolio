@@ -91,6 +91,7 @@ h2 >.name{
       -webkit-animation:fadeInDown 0.5s both ease-in;
       -moz-animation:fadeInDown 0.5s both ease-in;
       animation:fadeInDown 0.5s both ease-in;
+      text-shadow: 2px 2px 8px #000000;
 }
 /* End of Name container and contents */
 
