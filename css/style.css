@@ -9,6 +9,7 @@ body{
       margin-bottom: 0!important;
       position: fixed;
       width:100%;
+      z-index:9999;
 }
 .navbar-inverse {
       background-color:transparent;
@@ -17,14 +18,25 @@ body{
 
  .navbar-inverse .navbar-brand {
       color: #fff;
+      letter-spacing:3px;
   }
 
-  .navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav>li>a {
       color: #000;
       letter-spacing: 3px;
   }
 
+.container-fluid.myNavBar{
+      background-color:transparent;
+      transition: all 0.3s ease-out;
+}
+/* End of NAVBAR */
 
+
+/* Background Image with black gradient overlay */
+ #container-1{ /*the first image viewport height  */  /*TODO change the height back to 100vh after more sections inserted*/
+      height: 110vh;
+}
 .bg-1 {
       color: #ffffff;
       background: linear-gradient(
@@ -36,9 +48,15 @@ body{
       background-size: cover;
       background-repeat: no-repeat;
 }
+/* End of Background Image 1 */
 
-#container-1{
-      height: 110vh;
+/* Name, line breaker and sub header */
+.name-container{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
 }
 
 h2{
@@ -49,26 +67,6 @@ h2{
 
 h2 >.name{
     color: rgb(205, 205, 205);
-}
-.name{
-      font-size: 4em;
-      letter-spacing: 5px;
-      font-family: "Avenir", sans-serif;
-      color: #fff;
-      -webkit-animation:fadeInDown 0.5s both ease-in;
-      -moz-animation:fadeInDown 0.5s both ease-in;
-      animation:fadeInDown 0.5s both ease-in;
-}
-.typed-cursor {
-      color:#fff;
-      animation: blink 0.7s infinite;
-      display: inline;
-}
-
-@Keyframes blink{
-      0% { opacity:1; }
-      50% { opacity:0; }
-      100% { opacity:1; }
 }
 
 .line_break{
@@ -81,13 +79,32 @@ h2 >.name{
       -webkit-animation:fadeInUp 0.5s both ease-in;
       -moz-animation:fadeInUp 0.5s both ease-in;
       animation:fadeInUp 0.5s both ease-in;
+      letter-spacing:3px;
 
 }
 
-.name-container{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
+.name{
+      font-size: 4em;
+      letter-spacing: 5px;
+      font-family: "Avenir", sans-serif;
+      color: #fff;
+      -webkit-animation:fadeInDown 0.5s both ease-in;
+      -moz-animation:fadeInDown 0.5s both ease-in;
+      animation:fadeInDown 0.5s both ease-in;
 }
+/* End of Name container and contents */
+
+/* Tpye cursor from type.js */
+.typed-cursor {
+      color:#fff;
+      animation: blink 0.7s infinite;
+      display: inline;
+}
+
+@Keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+}
+
+/* end of type js css */
