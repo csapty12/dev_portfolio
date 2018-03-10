@@ -92,6 +92,16 @@
       var navbarElements =$(".navbar-inverse .navbar-nav>li>a");
       var navbarBrand= $(".navbar-brand");
       var chevron=$(".fas.fa-chevron-down");
+      var scrollButton = $(".fas.fa-chevron-down");
+
+    scrollButton.click(function() {
+    $('html,body').animate({
+        scrollTop: $("#container-2").offset().top},
+        'slow');
+    });
+
+
+
       $(window).scroll(function(event){
         var positionofscroll = $(this).scrollTop();
         if (positionofscroll > 50){
