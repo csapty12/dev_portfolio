@@ -121,21 +121,23 @@ h2 >.name{
       font-size:2em;
 }
 
-
-
 #container-2{
       color:#fff;
       letter-spacing: 3px;
       font-family: "Montserrat", sans-serif;
 }
 
-.portfolio{
+.portfolio, .contact{
       position: relative;
       top:3vh;
 }
 
 .row{
       padding: 8vh 0;
+}
+.technologies{
+      font-size: 0.8em;
+      color: rgb(117, 117, 117);
 }
 .img-thumbnail{
       background: none;
