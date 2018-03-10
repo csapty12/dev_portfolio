@@ -73,7 +73,7 @@ h2 >.name{
     color: rgb(205, 205, 205);
 }
 
-.line_break{
+.line_break, .portfolio_line_break{
       -webkit-animation:fadeIn 1.2s both ease-in;
       -moz-animation:fadeIn 1.2s both ease-in;
       animation:fadeIn 1.2s both ease-in;
@@ -124,8 +124,26 @@ h2 >.name{
 
 
 #container-2{
-      height:1000px;
       color:#fff;
       letter-spacing: 3px;
       font-family: "Montserrat", sans-serif;
+}
+
+.row{
+      padding: 8vh 0;
+}
+.img-thumbnail{
+      background: none;
+}
+
+.description{
+      text-align: justify;
+      position: relative;
+      top:4vh;
+}
+
+.portfolio_line_break{
+      height: 1px;
+      border: 0;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.425), rgba(255, 255, 255, 0));
 }
