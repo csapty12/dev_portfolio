@@ -30,6 +30,10 @@ body{
       background-color:transparent;
       transition: all 0.3s ease-out;
 }
+
+.navbar-brand{
+      visibility: hidden;
+}
 /* End of NAVBAR */
 
 
@@ -115,7 +119,6 @@ h2 >.name{
       bottom: 30px;
       left:50%;
       font-size:2em;
-
 }
 
 
