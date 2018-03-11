@@ -156,7 +156,7 @@ h2 >.name{
 }
 
 #container-3{ /*the first image viewport height  */  /*TODO change the height back to 100vh after more sections inserted*/
-      height: 80vh;
+      height: 100vh;
 }
 
 .bg-3 {
@@ -168,6 +168,8 @@ h2 >.name{
       background-size: cover;
       background-repeat: no-repeat;
       position: relative;
+      background-attachment: fixed;
+      background-position: center;
 }
 
 .form-horizontal{
