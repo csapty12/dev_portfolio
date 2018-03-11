@@ -157,6 +157,7 @@ h2 >.name{
 
 #container-3{ /*the first image viewport height  */  /*TODO change the height back to 100vh after more sections inserted*/
       height: 100vh;
+      font-family:  "Montserrat", sans-serif;
 }
 
 .bg-3 {
