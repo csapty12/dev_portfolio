@@ -141,12 +141,18 @@ h2 >.name{
 }
 .img-thumbnail{
       background: none;
+      border:none;
+      border-radius: 10px;
 }
 
 .description{
       text-align: justify;
       position: relative;
       top:4vh;
+}
+
+img{
+      border-radius: 10px;
 }
 
 .portfolio_line_break{
