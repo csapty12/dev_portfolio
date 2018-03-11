@@ -154,3 +154,26 @@ h2 >.name{
       border: 0;
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.425), rgba(255, 255, 255, 0));
 }
+
+#container-3{ /*the first image viewport height  */  /*TODO change the height back to 100vh after more sections inserted*/
+      height: 80vh;
+}
+
+.bg-3 {
+      color: #ffffff;
+      background: linear-gradient(
+            rgba(0,0,0,0.5),
+             rgba(0,0,0,0.5)
+            ),url("../img/contact3.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+}
+
+.form-horizontal{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width:80vw;
+}
