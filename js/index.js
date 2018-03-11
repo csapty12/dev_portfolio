@@ -4,6 +4,7 @@ var navbarElements =$(".navbar-inverse .navbar-nav>li>a");
 var navbarBrand= $(".navbar-brand");
 var chevron=$(".fas.fa-chevron-down");
 var scrollButton = $(".fas.fa-chevron-down");
+var backToTopButton = $(".fas.fa-chevron-up");
 
 // when you scroll past x px, things will start to change
 $(window).scroll(function(event){
@@ -66,7 +67,16 @@ scrollButton.click(function() {
       scrollTop: $("#container-2").offset().top},
       'slow');
   });
+// scroll button on click event
+backToTopButton.click(function() {
+  $('html,body').animate({
+      scrollTop: $("#container-1").offset().top},
+      'slow');
+  });
 });
+
+
+
 
 //type js script 
 document.addEventListener("DOMContentLoaded", function(){
