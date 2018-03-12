@@ -137,15 +137,59 @@ h2 >.name{
       color:#fff;
       letter-spacing: 3px;
       font-family: "Montserrat", sans-serif;
+      height:100vh;
+
+}
+.portfolio-image-container{
+      position: relative;
+      overflow: hidden;
+}
+
+.portfolio-image-container:hover .portfolio-image {
+      opacity: 0.3;
+}
+
+.portfolio-image-container:hover .view-project {
+      opacity: 1;
+}
+
+.portfolio-image{
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      backface-visibility: hidden;
+
+}
+
+.portfolio-image:hover{
+      -moz-transform: scale(1.02);
+      -webkit-transform: scale(1.02);
+      transform: scale(1.02);
+
+}
+
+.text{
+      border:3px solid #fff;
+      padding:10px;
+}
+
+.view-project{
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
 }
 
 .portfolio, .contact, h4{
       position: relative;
       top:3vh;
 }
-
 .row{
-      padding: 8vh 0;
+      padding: 4vh 0;
 }
 .technologies{
       font-size: 0.8em;
@@ -156,28 +200,18 @@ h2 >.name{
       border:none;
       border-radius: 10px;
 }
-
 .description{
       text-align: justify;
-      position: relative;
-      
+      position: relative;     
 }
-
 img{
       border-radius: 10px;
-}
-
-.portfolio_line_break{
-      height: 1px;
-      border: 0;
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.425), rgba(255, 255, 255, 0));
 }
 
 #container-3{ /*the first image viewport height  */  /*TODO change the height back to 100vh after more sections inserted*/
       height: 100vh;
       font-family:  "Montserrat", sans-serif;
 }
-
 .bg-3 {
       color: #ffffff;
       background: linear-gradient(
@@ -236,10 +270,19 @@ img{
       .name, .portfolio, .contact{
             font-size: 3em;
       }
+      
+      .navbar-right > .navbar-elements:hover{
+            background-color: rgba(0, 0, 0, 0.75);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
+      }
 }
 
 @media only screen and (max-width: 400px) {
       .name, .portfolio, .contact{
             font-size:1.8em;
+      }
+      .navbar-right > .navbar-elements:hover{
+            background-color: rgba(0, 0, 0, 0.75);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
       }
 }
