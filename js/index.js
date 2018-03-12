@@ -61,13 +61,13 @@ $('a[href*="#"]')
     }
   });
 
-// scroll button on click event
+// scroll button down on click event
 scrollButton.click(function() {
   $('html,body').animate({
       scrollTop: $("#container-2").offset().top},
       'slow');
   });
-// scroll button on click event
+// scroll button up on click event
 backToTopButton.click(function() {
   $('html,body').animate({
       scrollTop: $("#container-1").offset().top},

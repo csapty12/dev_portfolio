@@ -2,6 +2,7 @@ body{
       margin:0;
       padding:0;
       background:#000;
+      font-family: "Montserrat", sans-serif;
 }
 
 /* NAVBAR */
@@ -128,6 +129,7 @@ h2 >.name{
       font-size:2em;
       left:50%;
       cursor: pointer;
+      padding-bottom: 5px;
 
 }
 
@@ -158,7 +160,7 @@ h2 >.name{
 .description{
       text-align: justify;
       position: relative;
-      top:4vh;
+      
 }
 
 img{
@@ -213,6 +215,16 @@ img{
       color:#fff;
       font-family:"Montserrat", sans-serif;
       letter-spacing: 3px;
+}
+
+.social-media{
+      margin-top:5%;
+}
+
+.fab{
+      padding:0 10px;
+      color: #fff;
+      
 }
 
 
