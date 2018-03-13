@@ -153,6 +153,9 @@ h2 >.name{
 .portfolio-image-container:hover .view-project {
       opacity: 1;
 }
+.portfolio-link:active, .portfolio-link:hover, .portfolio-link:visited {
+      color:#fff;
+}
 
 .portfolio-image{
       -moz-transition: all 0.3s;
@@ -177,9 +180,13 @@ h2 >.name{
       transition: all 0.3s;
 }
 
-.see-all-projects > span:hover{
+.text{
+      color:#fff !important;
+}
+
+.see-all-projects > span:hover, .text:hover{
       background-color:#fff;
-      color: #000;
+      color: #000 !important;
       font-weight: bold;
 }
 
