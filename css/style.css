@@ -1,196 +1,170 @@
-body{
-      margin:0;
-      padding:0;
-      background:#000;
+body {
+      margin: 0;
+      padding: 0;
+      background: #000;
       font-family: "Montserrat", sans-serif;
+      height: 100%;
+      letter-spacing: 3px;
+      font-size: 1.5em;
+      color: #fff;
 }
 
 /* NAVBAR */
-.navbar{
-      margin-bottom: 0!important;
-      position: fixed;
-      width:100%;
-      z-index:9999;
-}
-.navbar-inverse {
-      background-color:transparent;
-      border-color: transparent;
- }
 
- .navbar-inverse .navbar-brand {
+.navbar {
+      margin-bottom: 0 !important;
+      position: fixed;
+      width: 100%;
+      z-index: 9999;
+}
+
+.navbar-inverse {
+      background-color: transparent;
+      border-color: transparent;
+}
+
+.navbar-inverse .navbar-brand {
       color: #fff;
-      letter-spacing:3px;
-  }
+      letter-spacing: 3px;
+}
 
 .navbar-inverse .navbar-nav>li>a {
       color: #fff;
       letter-spacing: 3px;
-  }
+}
 
-.container-fluid.myNavBar{
-      background-color:transparent;
+.container-fluid.myNavBar {
+      background-color: transparent;
       transition: all 0.3s ease-out;
 }
 
-.navbar-brand{
+.navbar-brand {
       visibility: hidden;
 }
+
 /* End of NAVBAR */
 
+/* start of CONTAINER ONE - #container-1 */
 
-/* Background Image with black gradient overlay */
- #container-1{ /*the first image viewport height  */  /*TODO change the height back to 100vh after more sections inserted*/
+#container-1 {
       height: 110vh;
-}
-.bg-1 {
-      color: #ffffff;
-      background: linear-gradient(
-            rgba(0,0,0,0),
-             /* rgba(0,0,0,0), */
-             rgba(0,0,0,0.5)
-            ,rgba(0,0,0,1)
-            ),url("../img/test3.jpg");
+      background: linear-gradient( rgba(0, 0, 0, 0.0), /* rgba(0,0,0,0), */
+      rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../img/test3.jpg");
       background-size: cover;
       background-repeat: no-repeat;
 }
-/* End of Background Image 1 */
 
-/* Name, line breaker and sub header */
-.name-container{
+.name-container {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-
 }
 
-h2{
-      font-size:4em;
-      color:#cdcdcd;
+h2 {
+      font-size: 4em;
+      color: #cdcdcd;
       color: rgba(205, 205, 205, 1);
 }
 
-h2 >.name{
-    color: rgb(205, 205, 205);
+h2>.name {
+      color: rgb(205, 205, 205);
 }
 
-.line_break, .portfolio_line_break{
-      -webkit-animation:fadeIn 1.2s both ease-in;
-      -moz-animation:fadeIn 1.2s both ease-in;
-      animation:fadeIn 1.2s both ease-in;
+.line_break {
+      -webkit-animation: fadeIn 1.2s both ease-in;
+      -moz-animation: fadeIn 1.2s both ease-in;
+      animation: fadeIn 1.2s both ease-in;
+      width: 50%;
 }
 
-.sub_header{
-      -webkit-animation:fadeInUp 0.5s both ease-in;
-      -moz-animation:fadeInUp 0.5s both ease-in;
-      animation:fadeInUp 0.5s both ease-in;
-      letter-spacing:3px;
-
+.sub_header {
+      -webkit-animation: fadeInUp 0.5s both ease-in;
+      -moz-animation: fadeInUp 0.5s both ease-in;
+      animation: fadeInUp 0.5s both ease-in;
 }
 
-.name{
+.name {
       font-size: 4em;
       letter-spacing: 5px;
       font-family: "Montserrat", sans-serif;
       color: #fff;
-      -webkit-animation:fadeInDown 0.5s both ease-in;
-      -moz-animation:fadeInDown 0.5s both ease-in;
-      animation:fadeInDown 0.5s both ease-in;
+      -webkit-animation: fadeInDown 0.5s both ease-in;
+      -moz-animation: fadeInDown 0.5s both ease-in;
+      animation: fadeInDown 0.5s both ease-in;
       text-shadow: 2px 2px 8px #000000;
 }
+
 /* End of Name container and contents */
 
 /* Tpye cursor from type.js */
+
 .typed-cursor {
-      color:#fff;
       animation: blink 0.7s infinite;
       display: inline;
 }
 
-@Keyframes blink{
-      0% { opacity:1; }
-      50% { opacity:0; }
-      100% { opacity:1; }
+@Keyframes blink {
+      0% {
+            opacity: 1;
+      }
+      50% {
+            opacity: 0;
+      }
+      100% {
+            opacity: 1;
+      }
 }
 
 /* end of type js css */
 
-.see-more{
+.see-more {
       position: absolute;
       bottom: 30px;
-      left:50%;
-      font-size:2em;
+      left: 50%;
+      font-size: 2em;
       cursor: pointer;
 }
 
-.back-to-top{
-      position: absolute;
-      color:#fff;
-      font-size:2em;
-      left:50%;
-      cursor: pointer;
-      padding-bottom: 5px;
+/* start of container: portfolio container: #container-2 */
 
+#container-2 {
+      height: 100%;
+      background-color: #000;
+      position: relative;
 }
 
-#container-2{
-      
-      color:#fff;
-      letter-spacing: 3px;
-      font-family: "Montserrat", sans-serif;
-      height:110vh;
-
-}
-.portfolio-image-container{
+.portfolio-image {
+      padding: 10px;
+      /* border: 1px solid rgb(27, 27, 27); */
       position: relative;
       overflow: hidden;
 }
 
-.portfolio-image-container:hover .portfolio-image {
-      opacity: 0.3;
+.item img {
+      -webkit-transition: 0.6s ease;
+      transition: 0.6s ease;
 }
 
-.portfolio-image-container:hover .view-project {
-      opacity: 1;
-}
-.portfolio-link:active, .portfolio-link:hover, .portfolio-link:visited {
-      color:#fff;
+.portfolio-image:hover .item img {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
 }
 
-.portfolio-image{
-      -moz-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
+.caption {
+      background: none;
+      font-size: 0.6em;
+}
+
+.img-responsive {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
       backface-visibility: hidden;
-
 }
 
-.portfolio-image:hover{
-      -moz-transform: scale(1.02);
-      -webkit-transform: scale(1.02);
-      transform: scale(1.02);
-
-}
-
-.text, .see-all-projects>span{
-      border:3px solid #fff;
-      padding:10px;
-      -moz-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
-}
-
-.text{
-      color:#fff !important;
-}
-
-.see-all-projects > span:hover, .text:hover{
-      background-color:#fff;
-      color: #000 !important;
-      font-weight: bold;
-}
-
-.view-project{
+.overlay {
       transition: .5s ease;
       opacity: 0;
       position: absolute;
@@ -201,112 +175,117 @@ h2 >.name{
       text-align: center;
 }
 
-.portfolio, .contact, h4{
-      position: relative;
-      top:3vh;
-}
-.row{
-      padding: 4vh 0;
-}
-.technologies{
-      font-size: 0.8em;
-      color: rgb(117, 117, 117);
-}
-.img-thumbnail{
-      background: none;
-      border:none;
-      border-radius: 10px;
-}
-.description{
-      text-align: justify;
-      position: relative;     
-}
-img{
-      border-radius: 10px;
+.item:hover .img-responsive {
+      opacity: 0.3;
 }
 
-#container-3{ /*the first image viewport height  */  /*TODO change the height back to 100vh after more sections inserted*/
-      height: 100vh;
-      font-family:  "Montserrat", sans-serif;
+.item:hover .overlay {
+      opacity: 1;
 }
-.bg-3 {
-      color: #ffffff;
-      background: linear-gradient(
-            rgba(0,0,0,0.5),
-             rgba(0,0,0,0.5)
-            ),url("../img/contact4.jpeg");
+
+
+.see-all-projects-text, .text {
+      border: 2px solid #fff;
+      padding:16px 32px;
+      background: transparent;
+}
+
+.see-all-projects-button {
+      margin-top: 25px;
+      /* padding: 16px 32px; */
+}
+
+/* start of container: contact container: #container-4 */
+
+#container-4 {
+      height: 100vh;
+      background: linear-gradient( rgba(0, 0, 0, .5), /* rgba(0,0,0,0), */
+      rgba(0, 0, 0, 0)), url("../img/contact4.jpeg");
       background-size: cover;
       background-repeat: no-repeat;
       position: relative;
       background-attachment: fixed;
-      background-position: center;
 }
 
-.form-horizontal{
+.contact-form-container {
+      /* border:2px solid blue; */
+}
+
+.contact-form {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width:90%;
-      color:#fff;
-      letter-spacing: 3px;
 }
 
-.form-control{
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
-
+.shift-header-down {
+      margin-top: 6vh;
 }
 
-.contact{
-      display: block;
+.contact-form {
+      /* border:2px solid green; */
 }
 
-.footer-text{
-      padding:5% 0;
-      color:#fff;
-      font-family:"Montserrat", sans-serif;
-      letter-spacing: 3px;
+/* end of container: contact container: #container-4 */
+
+/* start of footer */
+
+.footer-text-container {
+      padding: 5px;
 }
 
-.social-media{
-      margin-top:5%;
+.back-to-top {
+      padding: 3px;
+      text-align: center;
+      font-size: 2em;
+      cursor: pointer;
 }
 
-.fab{
-      padding:0 10px;
-      color: #fff;
-      
-}
+/* end of footer */
 
-.footer-text-container{
-      padding:10px;
-}
+/* start of media queries: max with 800px */
 
+@media only screen and (min-width: 900px) {
+      #container-2 {
+            height: 100vh;
+      }
+}
 
 @media only screen and (max-width: 800px) {
-      .name, .portfolio, .contact{
+      .name,
+      .contact-header {
             font-size: 3em;
       }
-      
-      .navbar-right > .navbar-elements:hover{
+      .navbar-right>.navbar-elements:hover {
             background-color: rgba(0, 0, 0, 0.75);
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
       }
-
-      #container-2{
-            height:110%;
+      .contact-form {
+            width: 90%;
+      }
+      .footer-text,
+      .back-to-top {
+            font-size: 1.2em;
       }
 }
+
+/* end of media queries: max with 800px */
+
+/* start of media queries: max with 400px */
 
 @media only screen and (max-width: 400px) {
-      .name, .portfolio, .contact{
-            font-size:1.8em;
+      .name,
+      .contact-header {
+            font-size: 1.8em;
       }
-      .navbar-right > .navbar-elements:hover{
+      .navbar-right>.navbar-elements:hover {
             background-color: rgba(0, 0, 0, 0.75);
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
       }
-      #container-2{
-            height:110%;
+      .footer-text,
+      .back-to-top {
+            font-size: 1em;
       }
 }
+
+/* end of media queries: max with 400px */
