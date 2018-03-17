@@ -6,6 +6,11 @@ var chevron=$(".fas.fa-chevron-down");
 var scrollButton = $(".fas.fa-chevron-down");
 var backToTopButton = $(".fas.fa-chevron-up");
 
+var aboutMePhoto = $(".about-me-photo");
+var aboutMeDescription = $(".about-me-description");
+var aboutHeader = $(".about-header");
+
+
 // when you scroll past x px, things will start to change
 $(window).scroll(function(event){
   var positionofscroll = $(this).scrollTop();
@@ -73,6 +78,18 @@ backToTopButton.click(function() {
       scrollTop: $("#container-1").offset().top},
       'slow');
   });
+
+  aboutMePhoto.waypoint(function(){
+    console.log("waypoint");
+    aboutMePhoto.addClass("about-me-photo-fade-in");
+    aboutMeDescription.addClass("about-me-description-fade-in");
+    aboutHeader.addClass("about-header-fade-in");
+  }, 
+  {
+    offset:'90%'
+  }
+);
+
 });
 
 
