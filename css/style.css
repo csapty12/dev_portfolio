@@ -325,14 +325,6 @@ a:hover {
 
 /* end of footer */
 
-/* start of media queries: max with 800px */
-
-@media only screen and (min-width: 900px) {
-      /* #container-2 {
-            height: 100%;   
-      } */
-}
-
 @media only screen and (max-width: 800px) {
       .name,
       .contact-header,
