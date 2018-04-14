@@ -128,10 +128,14 @@ h2>.name {
 
 /* start of container: portfolio container: #container-2 */
 
+
+
 #container-2 {
       height: 100%;
       background-color: #000;
       position: relative;
+      padding-bottom: 6vh;
+      /* border:2px solid green; */
 }
 
 .portfolio-image {
@@ -223,14 +227,22 @@ a:hover {
 /* start of container: container about: #container-3 */
 #container-3{
       background: rgb(31, 31, 31);
+      /* height:100vh; */
+}
+.row.about-me-row{
+      height:100%;
 }
 .photo{
       border-right:1px solid rgb(109, 109, 109);
 
 }
 
-.about-me-photo, .about-me-description, .about-header{
-      opacity: 0;
+.about-me-photo-container{
+      border-radius: 50%;
+}
+
+.about-me-photo-container>.about-me-image{
+      border-radius: 50%;
 }
 
 .about-me-photo-fade-in{
@@ -283,7 +295,7 @@ a:hover {
 }
 
 .shift-header-down {
-      margin-top: 6vh;
+      margin-top: 4vh;
 }
 
 /* end of container: contact container: #container-4 */
@@ -301,14 +313,24 @@ a:hover {
       cursor: pointer;
 }
 
+.social-media-links{
+
+      margin:0 auto;
+      text-align: center;
+
+}
+.icons>a{
+      padding:15px 5px;
+}
+
 /* end of footer */
 
 /* start of media queries: max with 800px */
 
 @media only screen and (min-width: 900px) {
-      #container-2 {
-            height: 100vh;
-      }
+      /* #container-2 {
+            height: 100%;   
+      } */
 }
 
 @media only screen and (max-width: 800px) {
@@ -328,6 +350,14 @@ a:hover {
       .back-to-top {
             font-size: 1.2em;
       }
+      .about-me-row{
+            height:100%;
+      }
+      .about-me-photo-container{
+            width:50%;
+            margin: 0 auto;
+      }
+      
 }
 
 /* end of media queries: max with 800px */
